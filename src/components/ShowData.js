@@ -29,22 +29,22 @@ function ShowData() {
     }
 
     return (
-        <div>
+        <div >
             <Container>
                 <Grid container >
-                    <Grid item sm={8} pt={15} pl={19}>
+                    <Grid item sm={10} pt={15} pl={20}>
                         <Card>
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography variant='h3' color='red' align='center'>Todo App</Typography>
+                                    <Typography variant='h3' backgroundColor='#033E3E' color='red' align='center' fontFamily={"Courier New(monospace)"}>Todo App</Typography>
                                     <Box>
                                         <TextField placeholder='Enter your task' fullWidth varient='outlined' margin='normal' label='To Do...' name='task' value={data.task} onChange={(e) => { eventHandler(e) }} />
                                     </Box>
                                 </CardContent>
                             </CardActionArea>
-                            <CardActions>
+                            <CardActions sx={{alignItems:'center'}}>
                                 <Box mt={2} >
-                                    <Button color='primary' variant='contained' startIcon={<AddBoxIcon />} onClick={() => { add() }}> Add </Button>
+                                    <Button color='success' variant='contained' startIcon={<AddBoxIcon />} onClick={() => { add() }}> Add </Button>
                                 </Box>
                             </CardActions>
 
@@ -52,6 +52,26 @@ function ShowData() {
                     </Grid>
                 </Grid>
             </Container>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

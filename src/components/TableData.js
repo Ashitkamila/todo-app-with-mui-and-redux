@@ -33,13 +33,14 @@ function TableData() {
 
   return (
     <div>
-        <Paper style={{width:'900px', marginLeft:'100px'}}>
+        <Paper style={{marginTop:'-300px',width:'800px',marginLeft:'330px'}}>
             <TableContainer component={Paper}>
+            <Typography variant='h4' backgroundColor='blue' color='white' align='center' fontFamily={"Courier New(monospace)"}>Todo List's</Typography>
                 <Table>
-                    <TableBody>
+                    <TableBody style={{backgroundColor:'#ADD8E6'}}>
                         {todoStore.finalData.map((ele,index)=>{
                             return <TableRow key={index}>
-                                <TableCell><Typography variant='h5' style={ele.completed ? {color:'blue'}:null} >{ele.task}</Typography></TableCell>
+                                <TableCell><Typography variant='h5' style={ele.completed ? {color:'blue',textDecoration:'line-through'}:null} >{ele.task}</Typography></TableCell>
                                 <TableCell style={{display:'flex'}}>
                                     <Box pl={2}><EditIcon onClick={()=>{editDa(index,ele)}}/></Box>
                                 <Box pl={2}><DoneIcon onClick={()=>{updateComplete(index)}}/></Box>
